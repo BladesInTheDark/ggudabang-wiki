@@ -275,6 +275,7 @@
   <button class="on" data-s="home">🏠 홈</button>
   <button data-s="dex">📖 도감·강화</button>
   <button data-s="mine">⛏️ 도감광산</button>
+  <button data-s="gacha">🎰 가챠소</button>
   <button data-s="dungeon">🐔 동물던전</button>
   <button data-s="rules">📜 서버 룰</button>
   <button data-s="api">💝 API 안내</button>
@@ -399,6 +400,21 @@
     </div>
   </section>
 
+  <!-- ═══════ 가챠소 ═══════ -->
+  <section id="gacha">
+    <h3 class="sec y2">🎰 가챠소</h3>
+    <div class="speech">
+      <span class="who">🎰 이용 방법</span>
+      도감을 채우다 생긴 <b>잉여 아이템</b>을, 나에게 필요할 수도 있는 아이템으로 바꿔주는 곳이에요.<br>
+      <b>로비의 가챠소 NPC에게 우클릭</b>해서 이용하고, <b>하루 5회</b>까지 돌릴 수 있어요.
+    </div>
+    <div class="cards">
+      <div class="card t-y"><div class="ic">🎲</div><h4>동일 등급 3개 → 랜덤 1개</h4><p><b>같은 등급 아이템 3개</b>를 넣으면 <b>같은 등급의 랜덤 아이템 1개</b>가 나와요.<br>3개는 <b>전부 같은 아이템이어도, 서로 다른 아이템이어도</b> 괜찮아요 — 등급만 같으면 OK!</p></div>
+      <div class="card t-r"><div class="ic">🍀</div><h4>완전 랜덤이에요</h4><p>넣은 아이템 3개는 <span class="bad">그대로 사라집니다.</span><br>게다가 완전 랜덤이라 <b>방금 넣었던 아이템이 그대로 다시 나올 수도</b> 있어요. 운에 맡겨보세요!</p></div>
+      <div class="card t-b"><div class="ic">🎫</div><h4>5회를 다 썼다면?</h4><p>하루 5회를 다 쓴 뒤에도 더 돌리고 싶다면, <b>⛏️ 도감광산</b>의 <b>특광</b>으로 <b>가챠 추가이용권</b>을 구매할 수 있어요.<br><small style="color:#6a736a">추가이용권은 당일 23:59까지 사용 가능</small></p></div>
+    </div>
+  </section>
+
   <!-- ═══════ 동물던전 ═══════ -->
   <section id="dungeon">
     <div class="banner"><img data-img="village" alt="동물던전 로비 마을 전경" decoding="async"><span class="cap">🏘️ 던전 로비 — 중앙 오두막에서 입장·퇴장</span></div>
@@ -410,13 +426,15 @@
     </div>
     <div class="zoo">
       <div class="beast"><div class="em">🐔</div><div class="bn">닭</div><div class="bd">깃털·닭고기 + 달걀(확률)<br>3종 중 랜덤 1개</div></div>
-      <div class="beast"><div class="em">🐄</div><div class="bn">소</div><div class="bd">가죽 · 소고기</div></div>
+      <div class="beast"><div class="em">🐄</div><div class="bn">소</div><div class="bd">가죽 · 소고기<br>+ 우유 양동이(확률)</div></div>
       <div class="beast"><div class="em">🐖</div><div class="bn">돼지</div><div class="bd">돼지고기</div></div>
       <div class="beast"><div class="em">🐑</div><div class="bn">양</div><div class="bd">양털 · 양고기</div></div>
       <div class="beast"><div class="em">🐝</div><div class="bn">벌</div><div class="bd">벌집 조각 · 꿀이 든 병</div></div>
       <div class="beast"><div class="em">🐸</div><div class="bn">개구리</div><div class="bd">개구리불 3종 중 랜덤 1개</div></div>
       <div class="beast"><div class="em">🐰</div><div class="bn">토끼</div><div class="bd">토끼고기·토끼가죽·토끼발</div></div>
       <div class="beast"><div class="em">🦔</div><div class="bn">아르마딜로</div><div class="bd">인갑</div></div>
+      <div class="beast"><div class="em">🦑</div><div class="bn">오징어</div><div class="bd">먹물</div></div>
+      <div class="beast"><div class="em">🦑✨</div><div class="bn">발광오징어</div><div class="bd">발광 먹물 주머니</div></div>
     </div>
 
     <h3 class="sec r2">🎟️ 동물던전 이용권 (5분)</h3>
@@ -448,13 +466,12 @@
       <div class="ox x"><div class="mk">X</div><p>졸업 미루기 → <b>환생!</b><small>나홀로 서버 첫날부터 다시</small></p></div>
       <div class="ox x"><div class="mk">X</div><p><b>도전미션</b> 실드 룰렛으로 받기 불가능<small>꾸몬으로만 정산해드립니다</small></p></div>
       <div class="ox x"><div class="mk">X</div><p><b>갑옷 장식류</b> 복사 금지<small>파밍으로만 획득 가능</small></p></div>
-      <div class="ox x"><div class="mk">X</div><p><b>비방 금지</b><small>서로 존중하며 즐겁게 플레이해요</small></p></div>
+      <div class="ox x"><div class="mk">X</div><p><b>비방 금지</b> — 방송을 켜지 않은 접속<small>스트리머 서버라 <b>모두 개인 방송을 켠 상태로</b> 접속해야 해요</small></p></div>
     </div>
     <div class="subhead" style="color:var(--orange)">⚠️ 그 외 주의</div>
     <div class="oxgrid">
       <div class="ox w"><div class="mk">🐮</div><p>구리 골렘은 <b>본인 영역 지하</b> 울타리 안에서 제작<small>밖으로 나가면 남의 영역을 약탈할 수 있어요</small></p></div>
       <div class="ox w"><div class="mk">!</div><p>룰 3회 이상 위반 시 <b>전원 추가 룰렛</b><small>전체 공지 후 접속 인원 전체에게 룰렛이 돌아감</small></p></div>
-      <div class="ox w"><div class="mk">📹</div><p>서버 접속은 <b>방송을 켰을 때만</b> 가능<small>방송 없이 접속은 불가능해요</small></p></div>
     </div>
 
     <div class="permit">
@@ -510,6 +527,20 @@
       <span class="chip">📦 셜커박스</span>
       <span class="chip">⛏ 도감 광산 입장권 <small>1분</small></span>
       <span class="chip">🕊 날개 시간 추가권</span>
+    </div>
+
+    <div class="wikinote warn" style="margin-top:18px">
+      <span class="wt">💰 33 · 100 · 1000개는 '꾸몬'으로 적립돼요</span>
+      <h4>🍡 당고 · 🎁 베이직꾸러미는 직접 구매</h4>
+      <p><b>50 / 500 / 51 / 510 / 222 / 4444</b>는 후원받는 <b>즉시</b> 룰렛이 돌거나 이벤트가 실행돼요.<br>
+      하지만 <b>33 · 100 · 1000개</b>는 아이템이 바로 들어오지 않고, 내 <b>프로필 영역의 꾸몬</b>(인게임 API 재화)으로 <b>적립</b>됩니다.<br>
+      쌓인 꾸몬으로 <b>Shift + F</b> 꾸몬샵에서 <b>직접 구매</b>하세요 — 캐시샵에서 아이템 사듯이!</p>
+    </div>
+
+    <div class="wikinote confirmed" style="margin-top:18px">
+      <span class="wt">✅ 이번 서버 적용</span>
+      <h4>🔧 수리키트 사용 방법</h4>
+      <p>인벤 속 <b>수리할 아이템</b>에 <b>수리키트를 든 상태로 우클릭</b>해서 사용! 내구도를 <b>소 = 10%</b> / <b>대 = 50%</b> 회복해요.</p>
     </div>
 
     <div class="wikinote confirmed" style="margin-top:18px">
