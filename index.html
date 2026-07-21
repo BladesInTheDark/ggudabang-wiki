@@ -249,6 +249,28 @@
   .wikinote.warn p,.wikinote.warn ul li{color:#6b4415;}
   .wikinote.warn p b{background:#fff;}
 
+  /* 시발점푸법 — 판례 */
+  .verdict{background:#FFFDF5;border:var(--bd);box-shadow:var(--sh);margin:6px 0 10px;position:relative;overflow:hidden;}
+  .verdict .vhead{background:var(--ink);color:#fff;font-family:'Galmuri9',sans-serif;font-size:12px;letter-spacing:.5px;padding:11px 18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+  .verdict .vbody{padding:18px 22px 22px;}
+  .verdict .vcase{font-family:'Galmuri11',sans-serif;font-size:18px;color:#b3271e;margin-bottom:14px;line-height:1.45;}
+  .verdict .vrow{font-size:14px;line-height:1.9;margin:10px 0;display:flex;gap:10px;align-items:flex-start;}
+  .verdict .vk{flex-shrink:0;font-family:'Galmuri9',sans-serif;font-size:11px;background:var(--ink);color:#fff;padding:4px 10px;margin-top:2px;}
+  .verdict .seal{position:absolute;top:60px;right:24px;width:88px;height:88px;border:3px solid #c8352b;border-radius:50%;color:#c8352b;font-family:'Galmuri11',sans-serif;font-size:14px;display:flex;align-items:center;justify-content:center;transform:rotate(-13deg);opacity:.82;text-align:center;line-height:1.25;}
+  @media(max-width:640px){ .verdict .seal{position:static;margin:14px auto 0;transform:rotate(-4deg);} }
+
+  /* 시발점푸법 — 패치노트 */
+  .patch{display:flex;flex-direction:column;gap:16px;}
+  .pv{background:#fff;border:var(--bd);box-shadow:var(--sh);padding:16px 20px 18px;}
+  .pv .pvt{font-family:'Galmuri11',sans-serif;font-size:15px;color:var(--ink);margin-bottom:6px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
+  .pv .pvt .pvd{background:var(--gold);padding:3px 9px;border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink);}
+  .pv .pvt .pvh{font-family:'Galmuri9',sans-serif;font-size:12px;color:#6a736a;}
+  .pgrp{margin-top:12px;}
+  .pgrp .pcat{display:inline-block;font-family:'Galmuri9',sans-serif;font-size:11px;background:var(--creep);color:#fff;padding:3px 9px;margin-bottom:5px;}
+  .pgrp ul{margin:0 0 2px;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px;}
+  .pgrp ul li{font-size:13.5px;line-height:1.65;color:#3d463d;padding-left:16px;position:relative;}
+  .pgrp ul li::before{content:'›';position:absolute;left:3px;color:var(--creep-d);font-weight:900;}
+
   /* 채워주세요 플레이스홀더 */
   .fill{display:inline-block;background:repeating-linear-gradient(45deg,#fff,#fff 6px,#FFF4D6 6px,#FFF4D6 12px);
     border:2px dashed var(--gold);font-family:'Galmuri9',sans-serif;font-size:11px;color:#8a6d00;padding:3px 9px;}
@@ -280,6 +302,7 @@
   <button data-s="rules">📜 서버 룰</button>
   <button data-s="api">💝 API 안내</button>
   <button data-s="join">📢 참여 안내</button>
+  <button data-s="law">⚖️ 시발점푸법</button>
 </nav>
 
 <main>
@@ -635,7 +658,86 @@
     <div class="cards">
       <div class="card t-y"><div class="ic">📅</div><h4>서버 오픈 기간</h4><p><b>7/19 (일) 오후 3시 ~ 7/25 (토) 오후 3시</b><br>이 기간 안에 도감을 완성(졸업)하는 게 목표예요!</p></div>
       <div class="card t-b"><div class="ic">🖥️</div><h4>접속 안내</h4><p>마인크래프트 <b>버전 26.2</b> 야생 (유황 아이템 등장).<br>최신 버전 특성상 오류·버그가 잦을 수 있어요.</p></div>
-      <div class="card soon"><div class="ic">📝</div><h4>패치노트</h4><p><span class="csoon">🚧 준비 중</span><br>밸런스 변경·업데이트 공지가 이곳에 올라올 예정이에요.</p></div>
+      <div class="card t-r"><div class="ic">📝</div><h4>패치노트</h4><p>밸런스 변경·업데이트 공지는 <b>⚖️ 시발점푸법</b> 탭에서 확인하세요!</p></div>
+    </div>
+  </section>
+  <!-- ═══════ 시발점푸법 ═══════ -->
+  <section id="law">
+    <h3 class="sec r2">⚖️ 시발점푸법</h3>
+
+    <div class="verdict">
+      <div class="vhead"><span>📜 판례 · 2026.07.21</span><span>대법원 · 꾸다방 지부</span></div>
+      <div class="vbody">
+        <div class="vcase">[사건번호 20260721] 위더사건</div>
+        <div class="vrow"><span class="vk">요약</span><span>위더 소환 후 처리가 제대로 되지 않아, 지나가던 선량한 시민 <b>셈모</b> 씨가 사망한 사건.</span></div>
+        <div class="vrow"><span class="vk">판결</span><span><b>최준 님 흉내내며 노래 부르기</b> + <b>시발점푸법 제정</b> 후 위키 박제 <small style="color:#6a736a">(본인이 원함)</small></span></div>
+        <div class="seal">판결<br>확정</div>
+      </div>
+    </div>
+
+    <h3 class="sec b2">📌 이 사건으로 생긴 서버 룰</h3>
+    <div class="oxgrid">
+      <div class="ox w"><div class="mk">🌸</div><p>위더 장미를 얻으려 <b>위더를 소환</b>했다면 <b>최대한 직접 처치</b><small>어려우면 운영진에게 도움 요청 → 잡아드려요</small></p></div>
+      <div class="ox x"><div class="mk">X</div><p><b>물약으로 몹을 소환</b>해 위더 장미를 대량 획득 금지<small>서버 방향성·렉 방지를 위해</small></p></div>
+      <div class="ox x"><div class="mk">X</div><p><b>몹 팜</b>을 만들어 사냥(랜덤 강화권 파밍 등) 일체 금지</p></div>
+    </div>
+
+    <h3 class="sec y2">📝 패치노트</h3>
+    <div class="patch">
+      <div class="pv">
+        <div class="pvt"><span class="pvd">26.07.21</span><span class="pvh">18:00</span></div>
+        <div class="pgrp"><span class="pcat">야생월드</span>
+          <ul><li>낮은 확률로 <b>몬스터가 랜덤 강화권을 드롭</b>합니다.</li></ul>
+        </div>
+        <div class="pgrp"><span class="pcat">기타 오류</span>
+          <ul><li>일부 리소스팩 오류가 수정됩니다.</li></ul>
+        </div>
+      </div>
+
+      <div class="pv">
+        <div class="pvt"><span class="pvd">26.07.21</span><span class="pvh">01:43</span></div>
+        <div class="pgrp"><span class="pcat">동물던전</span>
+          <ul>
+            <li>동물던전 입장 시 메시지 표기 변경 (동물던전으로)</li>
+            <li>동물이 때릴 때 넉백되던 것 → 넉백 안 되게</li>
+          </ul>
+        </div>
+        <div class="pgrp"><span class="pcat">도감광산</span>
+          <ul><li>도감광산 입장 시 메시지 표기 변경 (도감광산으로)</li></ul>
+        </div>
+        <div class="pgrp"><span class="pcat">API</span>
+          <ul>
+            <li>운영자 API 555개 패치</li>
+            <li>일부 API 오류 수정</li>
+          </ul>
+        </div>
+        <div class="pgrp"><span class="pcat">채팅 / 표기</span>
+          <ul>
+            <li>탭 눌렀을 때 총인원 실시간으로 제대로 보이게 설정</li>
+            <li>서버 접속 / 퇴장 알림 안 보이게 설정</li>
+            <li>아이템 안 겹치는 현상 1차 패치</li>
+            <li>엔더드래곤 재소환 메시지에 채널 이름 정확히 명시 (야생3 처럼)</li>
+            <li>좌측 하단 채널 표시 삭제</li>
+            <li>베이직꾸러미 셜커상자 당첨 시 영어로 나오던 부분 한글화</li>
+          </ul>
+        </div>
+        <div class="pgrp"><span class="pcat">기타</span>
+          <ul>
+            <li>마을에서 모루·모래처럼 공중에 혼자 설치돼 있으면 안 되는 블록이 고정돼 있던 버그 수정</li>
+            <li>네트워크 프로토콜 오류로 팅기는 현상 패치</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pv">
+        <div class="pvt"><span class="pvd">26.07.20</span><span class="pvh">01:15</span></div>
+        <div class="pgrp"><span class="pcat">동물던전</span>
+          <ul>
+            <li>동물던전에 <b>오징어</b>, <b>발광오징어</b>가 추가되었습니다.</li>
+            <li>소를 잡으면 확률적으로 <b>우유 양동이</b>를 드롭합니다.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </main>
