@@ -249,6 +249,12 @@
   .wikinote.warn p,.wikinote.warn ul li{color:#6b4415;}
   .wikinote.warn p b{background:#fff;}
 
+  .notice{background:#FFECEC;border:3px solid var(--red);box-shadow:5px 5px 0 rgba(255,90,90,.35);
+    padding:14px 18px;margin:0 0 22px;display:flex;gap:12px;align-items:flex-start;}
+  .notice .nic{font-size:22px;flex-shrink:0;line-height:1.3;}
+  .notice .ntx{font-size:14px;line-height:1.7;color:#b3271e;font-weight:700;}
+  .notice .ntx small{display:block;font-weight:600;color:#8a2a2a;font-size:12px;margin-top:2px;}
+
   /* 시발점푸법 — 판례 */
   .verdict{background:#FFFDF5;border:var(--bd);box-shadow:var(--sh);margin:6px 0 10px;position:relative;overflow:hidden;}
   .verdict .vhead{background:var(--ink);color:#fff;font-family:'Galmuri9',sans-serif;font-size:12px;letter-spacing:.5px;padding:11px 18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;}
@@ -316,6 +322,10 @@
 <main>
   <!-- ═══════ 홈 ═══════ -->
   <section class="active" id="home">
+    <div class="notice">
+      <span class="nic">🚨</span>
+      <span class="ntx">금요일 저녁 7시부터 <b>50개·500개 공격 룰렛이 작동하지 않습니다.</b><small>서버 종료 36시간 전부터 적용돼요.</small></span>
+    </div>
     <div class="hero">
       <div class="boom">졸업하면 강제 퇴장!</div>
       <h2>다이아만 캐던 서버?<br>이젠 <mark>전부 다 모으는</mark><br>도감 서버!</h2>
@@ -676,6 +686,22 @@
     <h3 class="sec y2">📝 패치노트</h3>
     <p style="font-size:14px;color:#3d463d;margin-bottom:16px;line-height:1.8;">서버 업데이트·밸런스 변경 내역이에요. <b>최신 순</b>으로 정리했어요.</p>
     <div class="patch">
+      <div class="pv">
+        <div class="pvt"><span class="pvd">26.07.22</span><span class="pvh">01:38</span></div>
+        <div class="pgrp"><span class="pcat">상점</span>
+          <ul>
+            <li>로비 <b>특광 교환소 옆</b>에 <b>API 교환소</b>와 <b>염소 뿔 교환 NPC</b>가 생겼습니다.</li>
+            <li>염소 뿔 교환소에서는 도감에 나오는 <b>염소 뿔 4종</b>을 가챠할 수 있습니다.</li>
+          </ul>
+        </div>
+        <div class="pgrp"><span class="pcat">동물던전 · 지난 패치</span>
+          <ul>
+            <li><b>벌 아이템 2종</b> 드랍률 상향.</li>
+            <li>소동물(토끼·개구리·벌) 구역을 <b>벌초</b>했습니다(정리).</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="pv">
         <div class="pvt"><span class="pvd">26.07.21</span><span class="pvh">21:20</span></div>
         <div class="pgrp"><span class="pcat">API</span>
